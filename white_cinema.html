@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>WhiteCinema</title>
+    <style>
+    
+    /* FULL HD CHROME 환경에 최적화됨 */
+    /* 외각 여백 없애기 */
+    * {
+        margin: 0 auto;
+        padding: 0 auto;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    /* a href 태그 이용값들 밑줄 제거 밑 옵션*/
+    a:link { 
+        color: black; text-decoration: none
+    }
+    a:visited {
+         color: black; text-decoration: none;
+    }
+    a:hover { 
+        color: rgb(235, 77, 124); text-decoration: none;
+    }
+
+    #wrap{
+        position: absolute;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0 auto;
+        height: 1080px;
+        width: auto;
+        background: #F7EBFE;
+    }
+
+    #header{  
+        
+        height: 100px;
+        background: #C5C9FF;
+        line-height: 100px;
+        text-align: center;
+    }
+    #header #logo {
+        position: absolute;
+        height: 178px;
+        width: 533px;
+        top: -39px;
+        transform:translate(-50%);  /* position absolute로 인해 중앙 정렬시 기준점때문에 중앙 정렬 안되는것 해결 */
+    }
+
+    #nav{
+        height: 100px;
+        background: #CAF3F3;
+        text-align: center;
+    }
+
+    #nav .menu{ 
+        display: inline-block;
+        line-height: 100px;
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+
+    #content{
+        float: left;
+        height: 650px;
+        width: 1572px;
+        background: url(img/falling-stars.jpg);
+    }
+
+    #content #movie01{
+		position: absolute;
+		width: 256.735px;
+		height: 385.102px;
+		left: 284.917px;
+		top: 324.25px;
+    }
+	#content #movie02 {
+        position: absolute;
+		width: 270.184px;
+		height: 385.102px;
+		left: 713.152px;
+		top: 324.25px;
+	}
+	#content #movie03 {
+		position: absolute;
+		width: 270.247px;
+		height: 385.102px;
+		left: 1154.836px;
+		top: 324.25px;
+	}
+
+    #content #movie_name01{
+        margin-top: 10px;
+        position: absolute;
+		overflow: visible;
+		left: 285px;
+		top: 709px;
+        width: 257px;
+		height: 78px;
+        border: 5px #4A4951 solid;
+        border-radius: 40px;
+        background: #A59EB9;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 68px;
+    }
+
+    #content #movie_name02{
+        margin-top: 10px;
+        position: absolute;
+		overflow: visible;
+        width: 270px;
+		height: 78px;
+		left: 713px;
+		top: 709px;
+        border: 5px #4A4951 solid;
+        border-radius: 40px;
+        background: #A59EB9;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 68px;
+    }
+
+    #content #movie_name03{
+        margin-top: 10px;
+        position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 78px;
+		left: 1155px;
+		top: 709px;
+        border: 5px #4A4951 solid;
+        border-radius: 40px;
+        background: #A59EB9;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 68px;
+    }
+
+
+    #aside{
+        position: absolute;
+        transform:translate(-30%);
+        float: left;
+        display: inline;
+        height: 650px;
+        width: 331px;
+        background: #2B2C2D;
+    }
+
+    #aside .event{
+        margin-left: 41px;
+    }
+
+    #aside #event{
+        position: absolute;
+        margin-top: 29px;
+        width: 249px;
+        height: 78px;
+        border: 5px #F3ACAC solid;
+        border-radius: 40px;
+        background: #FFFFFF;
+        text-align: center;
+        line-height: 68px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    #aside #event01{
+		width: 250px;
+		height: 166px;
+        margin-top: 125px;
+    }
+
+    #aside #event02{
+		width: 249px;
+		height: 167px;
+        margin-top: 10px;
+    }
+
+    #aside #event03{
+		width: 249px;
+		height: 146px;
+        margin-top: 10px;
+    }
+    
+    
+    #content02 {
+        clear: both;
+        height: 120px;
+    }
+
+    #footer{
+        height: 128px;
+        border-top: 1px rgb(202, 196, 196) solid;
+        background: white;
+    }
+
+    #footer #footer_content{
+        text-align: center;
+        line-height: 128px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <a href="white_cinema.html">
+                <img id="logo" src="img/logo.png" alt="White_Cinema_Logo">
+            </a>
+        </header>
+
+        <nav id="nav">
+            <div class="menu">
+                <h3><a href="project.html">영화예매</a></h3>
+            </div>
+            <div class="menu">
+                <h3><a href="check.html">예매확인</a></h3>
+            </div>
+        </nav>
+
+        <section id="content">
+            <div id="content_back_image">
+                <div class="movie">
+                    <a href="trailer2.html" target="_blank">
+                        <img id="movie01" src="img/movie01.jpg" alt="movie01">
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="trailer1.html" target="_blank">
+                        <img id="movie02" src="img/movie02.jpg" alt="movie02">
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="trailer3.html" target="_blank">
+                        <img id="movie03" src="img/movie03.jpg" alt="movie03">
+                    </a>
+                </div>
+
+                <div>
+                    <span id="movie_name01">어벤져스 : 엔드게임</span>
+                </div>
+                <div id="movie_name02">
+                    <span>기생충</span>
+                </div>
+                <div id="movie_name03">
+                    <span>아비정전</span>
+                </div>
+            </div>
+        </section>
+
+        <aside id="aside">
+            <div class="event">
+                <div id="event">
+                    <span>
+                        이달의 이벤트
+                    </span>
+                </div>
+                <div>
+                    <img id="event01" src="img/event01.jpg" alt="event01">
+                </div>
+                <div>
+                    <img id="event02" src="img/event02.jpg" alt="event02">
+                </div>
+                <div>
+                    <img id="event03" src="img/event03.jpg" alt="event03">
+                </div>
+            </div>
+        </aside>
+
+        <section id="content02">
+
+        </section>
+
+        <footer id="footer">
+            <div id="footer_content">
+                <h3>
+                    Copyright©hannam.team.project All Right Reserved
+                </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
